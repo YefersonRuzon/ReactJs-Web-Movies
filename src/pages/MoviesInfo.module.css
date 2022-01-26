@@ -1,0 +1,125 @@
+.detailsContainer{
+    position: relative;
+    transform: translateY(3vw);
+    background-color: #2727270c;
+    height: 114.5vh;
+    display: flex;
+    overflow: hidden;
+}
+.imgBackdrop{
+    width: 100%;
+    opacity: .15;
+    filter: brightness(10px);
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+.img{
+    width: 25vw;
+    border-radius: 10px;
+    transform: translateX(5vw) translateY(9vw);
+    height: 38vw;
+    z-index: 3;
+}
+.info{
+    color: #fff;
+    width: 55vw;
+    height: 45vw;
+    transform: translateX(10vw) translateY(9vw);
+    cursor: default;
+}
+.info .p{
+    font-size: 1.8vw;
+}
+.info .data{
+    display: flex;
+    padding-bottom: 7vw;
+    transform: translateY(-1vw);
+}
+.info .data p:first-child{
+    border-radius: 5px;
+    padding: .2vw;
+    border: 1px solid #fff;
+    margin-right: 1vw;
+    font-size: 1vw;
+}
+.info .data p{
+    font-size: 1.3vw;
+}
+.info .description{
+    font-size: 1.3vw;
+    cursor: default;
+}
+.info .description p:first-child{
+    font-size: 1.5vw;
+    color: #dddddd;
+    margin-bottom: .5vw;
+}
+@media (max-width:460px) {
+    .imgBackdrop{
+        width: 100vh;
+        opacity: .30;
+        transform: rotate(90deg);
+        top: 42vw;
+        left: -22vh;
+        right: 50px;
+        position: absolute;
+    }
+    .imgBackdropContainer{
+        justify-content: start;
+    }
+    .detailsContainer{
+        transform: translateY(3vw);
+        height: 104vh;
+        
+    }
+
+
+    .img{
+        width: 50vw;
+        border-radius: 20px;
+        transform: translateX(25vw) translateY(16vw);
+        height: 80vw;
+    }
+    .info{
+        color: #fff;
+        width: 55vw;
+        height: 45vw;
+        transform: translateX(-27vw) translateY(100vw);
+        cursor: default;
+        text-align: center;
+    }
+    .info .p{
+        font-size: 4.5vw;
+        
+    }
+    .info .data{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4vw;
+        transform: translateY(-1vw);
+    }
+    .info .data p:first-child{
+        border-radius: 5px;
+        padding: .5vw;
+        border: 1px solid #fff;
+        margin-right: 1vw;
+        font-size: 2.6vw;
+    }
+    .info .data p{
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+    .info .description{
+        font-size: 4vw;
+        cursor: default;
+        width: 100vw;
+        transform: translateX(-23vw);
+        
+    }
+    .info .description p:first-child{
+        font-size: 4vw;
+        color: #7a7a7a;
+        margin-bottom: .5vw;
+    }
+}

@@ -1,0 +1,18 @@
+.endPage{
+    text-align: center;
+    color: #909090;
+    padding: 2vw 26vw 5vw;
+    font-size: 1.3vw;
+    cursor: default;
+    transition: all ease-in-out .5s;
+}
+.endPage:hover{
+    color: #fff;
+}
+@media (max-width:460px){
+    .endPage{
+        font-size: 4vw;
+        padding: 2vw 5vw 10vw;
+
+    }
+}

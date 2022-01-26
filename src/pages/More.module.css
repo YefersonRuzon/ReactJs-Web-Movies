@@ -1,0 +1,35 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    color: #fff;
+    cursor: default;
+    background: rgba(0, 0, 0, 0.466);
+}
+.mesage{
+    transform: translateY(40vh);
+    
+   
+}
+.mesage h2{
+    margin-bottom: 20px;
+}
+.mesage p{
+    width: 50vw;
+    display: block;
+    margin: auto;
+    
+}
+@media (max-width:460px) {
+    .container{
+        font-size: 4vw;
+    }
+    .mesage p{
+        width: 80vw;
+    }
+    .mesage{
+        transform: translateY(38vh);  
+    }
+}

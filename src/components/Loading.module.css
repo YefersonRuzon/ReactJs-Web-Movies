@@ -1,0 +1,17 @@
+.contentLoader{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+.contentLoader i{
+    transform: translateY(46vh);
+    font-size: 40px;
+    color: #fff;
+    animation: infinite 1s ease-in-out loaderAnimation;
+}
+@keyframes loaderAnimation {
+    100%{
+        transform:translateY(46vh) rotate(360deg);
+    }
+}

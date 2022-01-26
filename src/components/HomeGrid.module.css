@@ -1,0 +1,39 @@
+.MoviesContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 50px;
+    padding: 40px;
+    justify-content: center;
+    transform: translateY(5vh);
+    
+}
+
+.divContainer:hover .title::before{
+    background-color: #00ffff ;
+    
+}
+.title , .SubTitle{
+    text-align: justify;
+    color: white;
+    cursor: default;
+    margin-left: 6.5vw;
+
+}
+.SubTitle{
+    color: #00ffff;
+}
+.title::before{
+    content: "";
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-10px) translateY(2px);
+    transition: all ease-in-out .5s;
+}
+@media (max-widt:460px) {
+    .MoviesContainer{
+        grid-template-columns: 100vw;
+    }
+   
+}

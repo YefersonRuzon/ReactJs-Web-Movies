@@ -1,0 +1,177 @@
+.divContainer{
+    width: 90vw;
+    overflow:hidden;
+    scroll-snap-type: proximity;
+    scroll-behavior: smooth;
+    display: block;
+    margin: auto;
+    animation-delay: 2s;
+    
+}
+
+.CardMovieContainer{
+    display: flex;
+    margin: 10vh 0vw 5vh;
+    overflow: hidden;
+    align-content: center;
+    width: 600vw;
+    height: 17.6vw;
+    animation: infinite 50s ScroolAnimation;
+}
+@keyframes ScroolAnimation {
+    0%{
+        transform: translateX(0vw);
+        opacity: 0;
+    }
+    05%{
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+    10%{
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+    15%{
+        transform: translateX(-90vw);
+        opacity: 1;
+    }
+    25%{
+        transform: translateX(-90vw);
+        opacity: 1;
+    }
+    30%{
+        transform: translateX(-180vw);
+        opacity: 1;
+    }
+    40%{
+        transform: translateX(-180vw);
+        opacity: 1;
+    }
+    45%{
+        transform: translateX(-270vw);
+        opacity: 1;
+    }
+    55%{
+        transform: translateX(-270vw);
+        opacity: 1;
+    }
+    60%{
+        transform: translateX(-360vw);
+        opacity: 1;
+    }
+    70%{
+        transform: translateX(-360vw);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-450vw);
+        opacity: 1;
+    }
+    85%{
+        transform: translateX(-450vw);
+        opacity: 1;
+    }
+    90%{
+        transform: translateX(-510vw);
+        opacity: 1;
+    }
+    98%{
+        transform: translateX(-510vw);
+        opacity: 1;
+    }
+    99%{
+        transform: translateX(-510vw);
+        opacity: 0;
+    }
+    99.99%{
+        transform: translateX(-0vw);
+        opacity: 0;
+    
+    }
+    100%{
+        transform: translateX(-0vw);
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 460px){
+
+.CardMovieContainer{
+    height: 60vw;
+    width: 2000vw;
+}
+@keyframes ScroolAnimation {
+    0%{
+        transform: translateX(0vw);
+        opacity: 0;
+    }
+    05%{
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+    10%{
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+    15%{
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    25%{
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    30%{
+        transform: translateX(-200vw);
+        opacity: 1;
+    }
+    40%{
+        transform: translateX(-200vw);
+        opacity: 1;
+    }
+    45%{
+        transform: translateX(-300vw);
+        opacity: 1;
+    }
+    55%{
+        transform: translateX(-300vw);
+        opacity: 1;
+    }
+    60%{
+        transform: translateX(-400vw);
+        opacity: 1;
+    }
+    70%{
+        transform: translateX(-400vw);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-500vw);
+        opacity: 1;
+    }
+    85%{
+        transform: translateX(-500vw);
+        opacity: 1;
+    }
+    90%{
+        transform: translateX(-600vw);
+        opacity: 1;
+    }
+    98%{
+        transform: translateX(-600vw);
+        opacity: 1;
+    }
+    99%{
+        transform: translateX(-600vw);
+        opacity: 0;
+    }
+    99.99%{
+        transform: translateX(-0vw);
+        opacity: 0;
+    
+    }
+    100%{
+        transform: translateX(-0vw);
+        opacity: 0;
+    }
+}
+}

@@ -1,0 +1,60 @@
+.CardCarousel{
+    overflow: hidden;
+    width: 28vw;
+    height: 17.6vw;
+    margin: auto;
+    scroll-snap-type: proximity;
+    transition: all ease-in-out .5s;
+}
+.CardImg{
+    border-radius: 10px;
+    width: 28vw;
+    height: 16vw;
+    scroll-snap-align: center;
+    
+}
+.CardCarousel:hover{
+    transform: scale(1.03) translateY(-.2vw);
+}
+.title{
+    box-shadow: #000000ce 0px -.1vw 2vw 2vw;
+    background: #000000ce;
+    width: 28.2vw;
+    overflow: hidden;
+    transform: translateY(14.3vw) translateX(-28.2vw);
+    text-align: justify;
+    padding-left: 1vw;
+    font-size: 1vw;
+    padding: 0 1vw 2vw;
+   
+    position: absolute;
+    z-index: 20;
+    color: rgb(255, 255, 255);
+    font-family: poppins, sans-serif;
+}
+.div{
+    height: 20vw;
+    overflow: hidden;
+}
+@media only screen and (max-width: 460px){
+    
+    .CardImg{
+        width: 90vw;
+        height: auto;
+        scroll-snap-align: center;
+        
+        
+    }
+    .CardCarousel{
+        overflow: hidden;
+        width: 1000vw;
+        height: 90.6vw;
+    }
+    .title{
+        display: none;
+    }
+    .div{
+        height: 50vw;
+        overflow: hidden;
+    }
+}
